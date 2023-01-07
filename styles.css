@@ -1,0 +1,160 @@
+/*
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+*/
+*{
+     /* border: 2px solid cyan;  */
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+/* css resetting */
+body{
+    background-image: url('images/pattern-background-desktop.svg'); 
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    /* background-position: top;
+background-size:50%; */
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.checkoutcontent{
+    display: flex;
+}
+.checkoutcontent img{
+    margin-left: 0px;
+}
+.img{
+    width: 100%
+}
+.subscriptiontab{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+.subscriptiontab img{
+  width: 3rem;
+  /* margin-left: -.7rem; */
+  margin-left: -0.5rem;
+}
+h1{
+  font-size: 25px;
+  margin-bottom: 0.7rem;
+  margin-top: 1.3rem;
+}
+.subscriptionplan{
+  /* margin-top: 0; */
+  font-size: 18px;
+  margin-left: -3rem;
+}
+p{
+  color: hsl(224, 23%, 55%);
+}
+.container > div{
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 18px;
+}
+.plantype{
+  color: black;
+  font-weight: 900;
+}
+#planchage{
+  padding-left: 0;
+}
+.pcontent{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+button{
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  width: 22rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: .7rem;
+  margin-bottom: 1rem;
+  border: 1px solid hsl(245, 75%, 52%);
+  box-shadow: 0 14px 20px -12px hsl(224, 23%, 55%);
+}
+.cancel{
+  font-weight: 1000;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 550px ){
+  body{
+    background-image: url('images/pattern-background-mobile.svg'); 
+    background-size: cover;
+    
+  }
+    .container{
+    width: 20rem;
+    }
+    button{
+      width: 18rem;
+    }
+    h1{
+      margin-top: 1rem;
+    }
+    .subscriptionplan{  
+  margin-left: -1.9rem;
+    }
+}
